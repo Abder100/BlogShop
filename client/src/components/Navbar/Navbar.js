@@ -65,7 +65,7 @@ const Navbar = () => {
               color="secondary"
               onClick={logout}
             >
-              Logout
+              Se déconecter
             </Button>
           </div>
         ) : (
@@ -75,7 +75,7 @@ const Navbar = () => {
             variant="contained"
             color="primary"
           >
-            Sign In
+            Se conecter
           </Button>
         )}
       </Toolbar>

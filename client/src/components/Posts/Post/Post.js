@@ -35,7 +35,7 @@ const Post = ({ post, setCurrentId }) => {
           <Typography style={{ color: "orange" }}>
             &nbsp;
             {post.likes.length > 2
-              ? `You and ${post.likes.length - 1} others`
+              ? `Vous et ${post.likes.length - 1} autres personnes`
               : `${post.likes.length} like${post.likes.length > 1 ? "s" : ""}`}
           </Typography>
         </React.Fragment>
@@ -136,7 +136,7 @@ const Post = ({ post, setCurrentId }) => {
             color="secondary"
             onClick={() => dispatch(deletePost(post._id))}
           >
-            <DeleteIcon fontSize="small" /> &nbsp; Delete
+            <DeleteIcon fontSize="small" /> &nbsp; Suprimmer
           </Button>
         )}
       </CardActions>

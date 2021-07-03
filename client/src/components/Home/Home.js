@@ -79,7 +79,7 @@ const Home = () => {
                 onKeyDown={handleKeyPress}
                 name="search"
                 variant="outlined"
-                label="Search Memories"
+                label="Rechercher un post"
                 fullWidth
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -89,7 +89,7 @@ const Home = () => {
                 value={tags}
                 onAdd={(chip) => handleAddChip(chip)}
                 onDelete={(chip) => handleDeleteChip(chip)}
-                label="Search Tags"
+                label="Rechercher des tags"
                 variant="outlined"
               />
               <Button
@@ -98,7 +98,7 @@ const Home = () => {
                 variant="contained"
                 color="primary"
               >
-                Search
+                Rechercher
               </Button>
             </AppBar>
             <Form currentId={currentId} setCurrentId={setCurrentId} />

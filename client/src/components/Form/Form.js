@@ -59,7 +59,8 @@ const Form = ({ currentId, setCurrentId }) => {
     return (
       <Paper className={classes.paper} elevation={6}>
         <Typography variant="h6" align="center">
-          Please Sign In to create your own memories and like other's memories.
+          Merci de bien vouloir créer un compte ou vous connecter pour poster et
+          aimer des photos.
         </Typography>
       </Paper>
     );
@@ -84,12 +85,14 @@ const Form = ({ currentId, setCurrentId }) => {
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">
-          {currentId ? `Editing "${post?.title}"` : "Creating a Memory"}
+          {currentId
+            ? `En train de modifier "${post?.title}"`
+            : "Création d'un post"}
         </Typography>
         <TextField
           name="title"
           variant="outlined"
-          label="Title"
+          label="Titre"
           fullWidth
           required
           value={postData.title}
@@ -135,7 +138,7 @@ const Form = ({ currentId, setCurrentId }) => {
           type="submit"
           fullWidth
         >
-          Submit
+          Poster
         </Button>
         <Button
           variant="contained"
@@ -144,7 +147,7 @@ const Form = ({ currentId, setCurrentId }) => {
           onClick={clear}
           fullWidth
         >
-          Clear
+          Vider
         </Button>
       </form>
     </Paper>
